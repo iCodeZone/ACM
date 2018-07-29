@@ -1,0 +1,19 @@
+ ax+by=gcd(a,b)的解一定存在
+（1）求解不定方程
+ ax+by=c;
+ 若c%gcd(a,b)==0,存在整数解
+ 根据exgcd求出x0,y0;
+ x1 = x0*(c/Gcd(a,b));
+ y1 = y0*(c/Gcd(a,b));
+ 最后
+ x = x1 + b/Gcd(a, b) * t
+ y = y1 - a/Gcd(a, b) * t
+（2）求解模线性方程（线性同余方程）
+ ax≡b(mod n)→ax+ny=b
+ 当且仅当gcd(a,n)|b。方程有解，有gcd(a,n)个解
+（3）求解模的逆元；
+ ax=1(mod n)→ax+ny=1
+ 当且仅当gcd(a,n)=1，a存在逆元
+ *费马小定理(n为质数，a和n互质)
+ a^(n-1)≡1(mod n)→逆元x≡a^(n-2)(mod n)
+ a^n≡a(mod n)

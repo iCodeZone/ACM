@@ -1,0 +1,2 @@
+PushUP(int rt)是把当前结点的信息更新到父结点
+PushDown(int rt)是把当前结点的信息更新给儿子结点
