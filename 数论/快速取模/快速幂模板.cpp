@@ -3,8 +3,9 @@
 #include <cstdio>
 #define LL long long
 using namespace std;
+const int mod = 1e9 + 7;
 
-LL quickMod(LL a,LL b,LL mod){
+LL quick(LL a,LL b){
 	LL ans=1;
 	a%=mod;
 	while(b){
