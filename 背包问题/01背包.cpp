@@ -52,6 +52,7 @@ int main(){
 			}
 		}
 	}
+	//¼ÇÂ¼Â·¾¶ 
 	vector<int> v;
 	int i=n,j=W;
 	while(i>0&&j>0){
